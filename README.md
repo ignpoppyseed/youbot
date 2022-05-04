@@ -6,12 +6,10 @@
 2. Change bot config to fit your situation (lines 8 - 10 in main.py)  
 ### Example Configs
 #### Hosting on Repl:
-hosted_as_repl = True  
-botID = 'actual bot id'  
+hosted_as_repl = True   
 token = ''  
 #### Hosted by self
-hosted_as_repl = False  
-botID = 'actual bot id'  
+hosted_as_repl = False   
 token = 'XXXXXXXXXXXXXXXXXXXXXXXX.XXXXXX.XXXXXXXXXXXXXXXXXXX-XXXXXXX'  
 
 # Syntax
