@@ -8,6 +8,7 @@
 #### Hosting on Repl:
 hosted_as_repl = True   
 token = ''  
+Put your token in Repl environment variables with the name 'TOKEN' (case sensitive)
 #### Hosted by self
 hosted_as_repl = False   
 token = 'XXXXXXXXXXXXXXXXXXXXXXXX.XXXXXX.XXXXXXXXXXXXXXXXXXX-XXXXXXX'  
