@@ -20,7 +20,7 @@ Example: You say: "@youbot I love poppy#0001!"
 Then, a bot with your name and profile picture will say: "I love poppy@0001!"  
 
 # Preview
-<img src=https://raw.githubusercontent.com/ignpoppyseed/youbot/preview/preview1.png> </br>
-<img src=https://raw.githubusercontent.com/ignpoppyseed/youbot/preview/preview2.png>
+<img src=https://raw.githubusercontent.com/ignpoppyseed/youbot/main/preview/preview1.png> </br>
+<img src=https://raw.githubusercontent.com/ignpoppyseed/youbot/main/preview/preview2.png>
 
 ## With love, poppy
