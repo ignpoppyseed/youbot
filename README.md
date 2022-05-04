@@ -3,7 +3,7 @@
 
 # Setup
 1. Have discord.py installed (pip install discord.py)   
-2. Change bot config to fit your situation (lines 8 - 10 in main.py)  
+2. Change bot config to fit your situation (lines 7 - 8 in main.py)  
 ### Example Configs
 #### Hosting on Repl:
 hosted_as_repl = True   
