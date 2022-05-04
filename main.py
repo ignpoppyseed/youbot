@@ -4,13 +4,11 @@ from discord import guild
 
 #if hosted_as_repl is set to true, paste token in env with value TOKEN
 #if hosted_as_repl is set to false, paste token below
-#botID is always required
 hosted_as_repl = False
-botID = 'bot id here'
 token = 'token here'
 
 # Initialize Bot and Denote The Command Prefix
-bot = commands.Bot(case_insensitive=True, command_prefix="r>",activity= discord.Streaming(name="poppy code", url="https://cloverbrand.xyz"), status=discord.Status.online)
+bot = commands.Bot(case_insensitive=True, command_prefix=None, activity=discord.Activity(type=discord.ActivityType.watching, name="for my name"), status=discord.Status.online)
 bot.remove_command('help') #disables the built in help command
 
 # Runs when Bot Succesfully Connects
@@ -26,9 +24,9 @@ async def on_message(message):
     if message.webhook_id is not None:
         return 
     
-    if message.content.lower().startswith(f'<@{botID}>'):
+    if message.content.lower().startswith(f'<@{bot.user.id}>'):
         webhook = await message.channel.create_webhook(name=message.author.name)
-        await webhook.send(str(message.content.replace(f'<@{botID}>','')), username=message.author.name, avatar_url=message.author.avatar_url)
+        await webhook.send(str(message.content.replace(f'<@{bot.user.id}>','')), username=message.author.name, avatar_url=message.author.avatar_url)
         await message.delete()
 
         webhooks = await message.channel.webhooks()
