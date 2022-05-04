@@ -4,12 +4,12 @@
 # Setup
 1. Have discord.py installed (pip install discord.py)   
 2. Change bot config to fit your situation (lines 8 - 10 in main.py)  
-#### Example Configs
-##### Hosting on Repl:
+### Example Configs
+#### Hosting on Repl:
 hosted_as_repl = True  
 botID = 'actual bot id'  
 token = ''  
-##### Hosted by self
+#### Hosted by self
 hosted_as_repl = False  
 botID = 'actual bot id'  
 token = 'XXXXXXXXXXXXXXXXXXXXXXXX.XXXXXX.XXXXXXXXXXXXXXXXXXX-XXXXXXX'  
