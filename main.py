@@ -1,10 +1,13 @@
-import os
 import discord
 from discord.ext import commands
 from discord import guild
 
-TOKEN = os.environ['TOKEN']
-botID = 'BOT ID HERE'
+#if hosted_as_repl is set to true, paste token in env with value TOKEN
+#if hosted_as_repl is set to false, paste token below
+#botID is always required
+hosted_as_repl = False
+botID = 'bot id here'
+token = 'token here'
 
 # Initialize Bot and Denote The Command Prefix
 bot = commands.Bot(case_insensitive=True, command_prefix="r>",activity= discord.Streaming(name="poppy code", url="https://cloverbrand.xyz"), status=discord.Status.online)
@@ -31,5 +34,10 @@ async def on_message(message):
         webhooks = await message.channel.webhooks()
         for webhook in webhooks:
                 await webhook.delete()
-
+if hosted_as_repl:
+    import os
+    global TOKEN
+    TOKEN = os.environ['TOKEN']
+else:
+    TOKEN = token
 bot.run(TOKEN)
